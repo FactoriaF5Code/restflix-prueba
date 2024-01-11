@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+
+:root {
+    --main-bgcolormain: #101010;
+    --main-colorblue: #08B7BA;
+    --main-colorwhite: #ffffff;
+    --main-colorpink: #F612AC;
+    --main-coloryellow: #FEED01;
+    --var-fontfamily: "Montserrat", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.carruselPrincipal {
+    width: 100%;
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(157.45% 62.61% at 97.97% 91.06%, #f612ae50 0%, #101010f3 86.98%);
+    padding-top: 30px;
+}
+
+.backgroundMovie{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 880px;
+    background-size: 100% auto;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.imagenesCarrusel {
+    overflow: hidden;
+}
+
+.slide {
+    flex: 0 0 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.slide img {
+    box-shadow: 0px 20px 27px -17px rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.slide.active {
+    opacity: 1;
+    margin: 0px 0 60px 0;
+}
+
+.sliderflechaLeft,
+.sliderflechaRigth {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 1000px;
+    font-size: 40px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.sliderflechaLeft {
+    left: 180px;
+}
+
+.sliderflechaRigth {
+    right: 180px;
+}
+
+.detallesPeli {
+    background-color: #181717;
+    border-radius: 7px;
+    border-top: 1px solid var(--main-colorblue);
+    border-right: 1px solid var(--main-colorblue);
+    width: 33%;
+    height: fit-content;
+    margin-left: 100px;
+    box-shadow: -30px 30px 16px -17px #05787ad0;
+}
+
+.etiquetaEstreno img{
+    width: 60px;
+}
+
+.etiquetaEstreno{
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    margin: 50px 48px 0px;
+}
+
+
+.estrenoRestflix{
+    margin: 0px;
+    padding: 0px;
+    color:var(--main-colorwhite);
+    background-color: var(--main-colorpink);
+    padding: 4px 8px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.detallesPeli h1 {
+    font-size: 36px;
+    margin: 12px 50px 15px;
+    color: var(--main-colorblue);
+}
+
+.sinopsisClass {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.07em;
+    margin: 0;
+    margin: 10px 50px 10px 50px;
+    line-height: 1.6em;
+}
+
+.buttonsInfo{
+    margin: 20px 50px 50px 50px;
+    display: flex;
+    gap:20px;
+}
+
+.buttonPlay{
+    background-color: var(--main-coloryellow);
+    color: var(--main-bgcolormain);
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttonPlay:hover{
+    background-color: var(--main-colorblue);
+}
+
+.iconPlay{
+    width: 20px;
+}
+
+.buttonDetails{
+    color: var(--main-colorblue);
+    padding: 12px 20px;
+    font-size: 16px;
+    text-align: left;
+    border: 2px solid var(--main-colorblue);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttonDetails:hover{
+    color: var(--main-bgcolormain);
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid var(--main-colorblue);
+    background-color: var(--main-colorblue);
+}
+
+.iconDetails{
+    width: 28px;
+}

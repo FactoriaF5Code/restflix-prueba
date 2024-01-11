@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+}
+
+:root {
+  --main-bgcolormain: #060613;
+  --main-colorblue: #08B7BA;
+  --main-colorwhite: #ffffff;
+  --main-colorpink: #F612AC;
+  --main-coloryellow: #FEED01;
+  --var-fontfamily: "Montserrat", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: radial-gradient(157.45% 62.61% at 97.97% 91.06%, #053536 0%, #101010 86.98%);  
+  font-family: var(--var-fontfamily);
+  width: 100%;
+}

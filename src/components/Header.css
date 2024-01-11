@@ -1,0 +1,118 @@
+:root {
+    --main-bgcolormain: #101010;
+    --main-colorblue: #08B7BA;
+    --main-colorwhite: #ffffff;
+    --main-colorpink: #F612AC;
+    --main-coloryellow: #FEED01;
+    --var-fontfamily: "Montserrat", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #101010ee;
+    z-index: 1;
+    box-shadow: 0px 20px 27px -17px rgb(0, 0, 0);
+}
+
+.mainMenu {
+    height: 32px;
+    padding: 30px 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainMenu a {
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.mainMenu img {
+    width: 280px;
+    margin-right: 38px;
+}
+
+.mainNav {
+    display: flex;
+}
+
+.mainNav a {
+    margin: 15px;
+}
+
+.mainNav a:hover {
+    color: var(--main-colorpink);
+}
+
+.secondaryNav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.suscriptionButton {
+    background-color: var(--main-colorblue);
+    color: #060613;
+    font-family: var(--var-fontfamily);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.suscriptionButton:hover {
+    background-color: var(--main-colorpink);
+
+}
+
+.searchButton {
+    cursor: pointer;
+    width: 24px;
+    fill: white;
+}
+
+.searchButton:hover {
+    fill: var(--main-colorpink);
+}
+
+.selectLanguage {
+    width: 120px;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    margin-top:4px;
+}
+
+.iconWorld {
+    fill: rgb(99, 99, 99);
+    width: 28px;
+}
+
+.language {
+    font-family: var(--var-fontfamily);
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+.language a{
+    color: rgb(99, 99, 99);
+}
+
+.language a:hover{
+    color:var(--main-colorpink);
+}

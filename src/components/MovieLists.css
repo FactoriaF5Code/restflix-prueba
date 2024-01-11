@@ -1,0 +1,79 @@
+:root {
+    --main-bgcolormain: #060613;
+    --main-colorblue: #08B7BA;
+    --main-colorwhite: #ffffff;
+    --main-colorpink: #F612AC;
+    --main-coloryellow: #FEED01;
+    --var-fontfamily: "Montserrat", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.galleryMovies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 52px;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(93, 93, 95, 0.7) transparent;
+}
+
+.galleryMovies::-webkit-scrollbar {
+    height: 8px;    
+}
+
+.galleryMovies::-webkit-scrollbar-thumb {
+    background-color: rgba(93, 93, 95, 0.7);
+    border-radius: 4px;
+
+}
+
+
+.listTitle{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.8rem;
+    cursor: pointer;
+    color:var(--main-colorblue);
+}
+
+.moreHover{
+    opacity: 0;
+}
+
+.listTitleH2:hover + .moreHover{
+    opacity: 1;
+}
+
+.iconTitle{
+    width: 30px;
+}
+
+.moreHover:hover {
+    opacity: 1; 
+}
+
+button{
+    background-color: transparent;
+    color: white;
+    font-family: var(--var-fontfamily);
+    font-weight: 700;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#arrowRight{
+    transform: rotate(-90deg);
+    fill: #5d5d5f;
+    margin-left: 0.5rem;
+}
+
+
+.movieList {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.8rem;
+    padding: 4px;
+    flex-wrap: nowrap;
+    margin-bottom: 16px;
+}
